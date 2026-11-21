@@ -1,0 +1,16 @@
+# Example configuration for Split-seq pipeline
+# Two-round combinatorial indexing
+# Paired DNA (DipC2) and RNA (RNA2)
+
+Project1:
+  Name: Demo_DNA
+  Type: DipC2
+  P5: P1.29
+  P7: P2.29
+
+Project2:
+  Name: Demo_RNA
+  Type: RNA2
+  P5: P1.30
+  P7: P2.30
+  N6: T  
