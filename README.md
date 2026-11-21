@@ -516,7 +516,7 @@ output/
 
 └── Useful/
 
-DipC2
+
 Important DipC2 outputs include processed chromatin-contact files and contact maps such as:
 
 *.pairs.unique.final.gz
@@ -533,7 +533,7 @@ Important DipC2 outputs include processed chromatin-contact files and contact ma
 
 The pipeline also generates contact statistics and QC outputs.
 
-RNA2
+
 
 Important RNA2 outputs include:
 
@@ -543,11 +543,8 @@ Important RNA2 outputs include:
 
 along with RNA QC plots and intermediate UMI/gene-count files.
 
-Useful
 
-Selected plots and summary files are collected into:
-
-output/Useful/
+Selected plots and summary files are collected into: output/Useful/
 
 # Cleanup
 Intermediate files can consume substantial disk space.
