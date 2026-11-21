@@ -50,10 +50,10 @@ Major dependencies include:
 - igvtools
 - wigToBigWig
 - trim_galore
+- 
 Additional Python and R packages required by the scripts in scripts/SHARE-seq-nova/ must also be installed.
 
 We recommend creating and activating a dedicated Conda environment before running the pipeline.
-
 For example:
 conda activate splitseq
 The pipeline uses executables from the active Conda environment or system PATH. It does not require modification of the user's .bashrc.
