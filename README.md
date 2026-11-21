@@ -256,45 +256,11 @@ Demo_RNA → RNA2  → hg38
 # General run configuration
 Start=Fastq
 
-Runtype=full
+Runtype=full (QC processes a subset of reads for rapid quality assessment; full processes the complete dataset.)
 
-chem=rev
+chem=rev (Sequencing chemistry/orientation: rev is used for NovaSeq 1.5/NextSeq-style reverse-complement index orientation.)
 
 cores=32
-
-Start
-
-Input type:
-
-Bcl
-
-Fastq
-
-Demultiplexed
-
-Runtype
-
-QC
-
-full
-
-QC processes a subset of reads for rapid quality assessment.
-
-full processes the complete dataset.
-
-chem
-
-Sequencing chemistry/orientation:
-
-rev
-
-fwd
-
-For example:
-
-chem=rev
-
-is used for NovaSeq 1.5/NextSeq-style reverse-complement index orientation.
 
 # YAML configuration
 Sample-specific PCR/index information is specified in the YAML configuration file.
@@ -321,17 +287,13 @@ Project2:
   
   P7: P2.30
   
-  N6: T
+  N6: T (For RNA libraries using random priming, the YAML configuration can include: N6: T)
   
 The project names and assay types in the YAML file should match those specified in the main Bash script:
 
 Project=(Demo_DNA Demo_RNA)
 
 Type=(DipC2 RNA2)
-
-For RNA libraries using random priming, the YAML configuration can include:
-
-N6: T
 
 # DipC2 options
 DipC2 data are processed through the DipC branch of the pipeline.
